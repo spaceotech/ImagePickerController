@@ -55,17 +55,6 @@
                                     <action selector="actionClickOnCamera:" destination="yqh-rB-Ca3" eventType="touchUpInside" id="rha-RT-b0d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sl-O9-HKa">
-                                <rect key="frame" x="534" y="35" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="P3B-Jl-3Yd"/>
-                                    <constraint firstAttribute="width" constant="46" id="kvb-It-FhI"/>
-                                </constraints>
-                                <state key="normal" title="Crop"/>
-                                <connections>
-                                    <action selector="actionCropImage:" destination="yqh-rB-Ca3" eventType="touchUpInside" id="DDw-Vq-gRu"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -79,8 +68,6 @@
                             <constraint firstItem="B9c-Fd-1Y6" firstAttribute="top" secondItem="5ra-lM-kJu" secondAttribute="bottom" constant="53" id="jEo-fU-0LD"/>
                             <constraint firstItem="DBN-ww-V9j" firstAttribute="leading" secondItem="9xo-oP-HOm" secondAttribute="leading" id="mVH-3j-fKA"/>
                             <constraint firstItem="9xo-oP-HOm" firstAttribute="top" secondItem="DBN-ww-V9j" secondAttribute="bottom" constant="19" id="odf-wa-R4o"/>
-                            <constraint firstItem="7sl-O9-HKa" firstAttribute="top" secondItem="5ra-lM-kJu" secondAttribute="bottom" constant="15" id="yU1-1O-JiO"/>
-                            <constraint firstAttribute="trailing" secondItem="7sl-O9-HKa" secondAttribute="trailing" constant="20" id="yd9-gB-jXB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oPL-rQ-xHY"/>
