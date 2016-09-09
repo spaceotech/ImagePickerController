@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F967F9741D82807E00901EBB /* SOCropVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F967F9731D82807E00901EBB /* SOCropVC.swift */; };
 		F9E58B671D7ED4130062F186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E58B661D7ED4130062F186 /* AppDelegate.swift */; };
 		F9E58B691D7ED4130062F186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E58B681D7ED4130062F186 /* ViewController.swift */; };
 		F9E58B6C1D7ED4130062F186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E58B6A1D7ED4130062F186 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F967F9731D82807E00901EBB /* SOCropVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOCropVC.swift; sourceTree = "<group>"; };
 		F9E58B631D7ED4130062F186 /* SOImagePickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOImagePickerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E58B661D7ED4130062F186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9E58B681D7ED4130062F186 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				F9E58B661D7ED4130062F186 /* AppDelegate.swift */,
 				F9E58B681D7ED4130062F186 /* ViewController.swift */,
+				F967F9731D82807E00901EBB /* SOCropVC.swift */,
 				F9E58B6A1D7ED4130062F186 /* Main.storyboard */,
 				F9E58B6D1D7ED4130062F186 /* Assets.xcassets */,
 				F9E58B6F1D7ED4130062F186 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				F9E58B691D7ED4130062F186 /* ViewController.swift in Sources */,
 				F9E58B671D7ED4130062F186 /* AppDelegate.swift in Sources */,
+				F967F9741D82807E00901EBB /* SOCropVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +290,7 @@
 				F9E58B771D7ED4130062F186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

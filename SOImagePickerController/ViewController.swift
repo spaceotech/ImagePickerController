@@ -2,14 +2,15 @@
 //  ViewController.swift
 //  SOImagePickerController
 //
-//  Created by Hitesh on 9/6/16.
+//  Created by myCompany on 9/6/16.
 //  Copyright © 2016 myCompany. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, SOCropVCDelegate {
 
+    var delegate: SOCropVCDelegate?
     @IBOutlet weak var imgView: UIImageView!
     
     override func viewDidLoad() {
@@ -58,6 +59,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 //        dismissViewControllerAnimated(true, completion: nil)
 //    }
 
+
+    @IBAction func actionCropImage(sender: AnyObject) {
+        if imgView.image != nil {
+            let objCropVC = SOCropVC()
+            objCropVC.imgOriginal = imgView.image
+            objCropVC.isAllowCropping = true
+            objCropVC.cropSize = CGSizeMake(320, 320)
+            objCropVC.delegate = self
+            self.navigationController?.pushViewController(objCropVC, animated: true)
+        }
+    }
+    
+    
+    func imagecropvc(imagecropvc:SOCropVC, finishedcropping:UIImage) {
+        imgView.image = finishedcropping
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
